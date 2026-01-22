@@ -1,0 +1,23 @@
+.icon{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #f3b702;
+    padding: 5px;
+    font-weight: bold;
+}
+.icon .bi{
+    font-weight: bold;
+}
+.card p{
+    font-size: 12px;
+}
+.card{
+    transition: all .5s linear ;
+    border-radius: 20px;
+    border: none;
+}
+.card:hover{
+    transform: translateY(-10px);
+}

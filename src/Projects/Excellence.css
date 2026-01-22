@@ -1,0 +1,14 @@
+.excellence-body {
+  background: linear-gradient(rgb(0, 0, 0), rgb(18, 25, 41));
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+}
+.excellence-body p {
+  font-size: 12px;
+  color: #b5b1af;
+}
+.span {
+  color: #b5b1af;
+  font-size: 12px;
+}

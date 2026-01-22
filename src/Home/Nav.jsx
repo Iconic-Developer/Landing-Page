@@ -1,49 +1,15 @@
-import React, { useRef,useState } from "react";
+import React from "react";
 import logo from '../images/logo.jpg';
 import './Nav.css';
-import {NavLink,Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 const Nav = () => {
 
-    const [open, setOpen] = useState(false);
   
 
   return (
 
     
     <>
-
- {/* Menu Icon */}
-      
-
-      {/* Overlay */}
-      <div
-        className={`overlay ${open ? "show" : ""}`}
-        onClick={() => setOpen(false)}
-      ></div>
-
-      {/* Sidebar */}
-      <div className={`sidebar ${open ? "open" : ""}`}>
-        <button className="close-btn" onClick={() => setOpen(false)}>
-          ✕
-        </button>
-
-        <ul className="menu-list">
-             <li><NavLink >Home </NavLink></li>
-                <li><NavLink >About Us </NavLink></li>
-                <li><NavLink >Services </NavLink></li>
-                <li><NavLink >Projects </NavLink></li>
-                <li><NavLink >Milestones </NavLink></li>
-                <li><NavLink >Contact Us </NavLink></li>
-                <li><NavLink >Career </NavLink></li>
-        </ul>
-      </div>
-
-
-
-
-
-
-
 
 
 
@@ -61,13 +27,13 @@ const Nav = () => {
             </div>
 
             <ul className="d-lg-flex gap-4 me-5 mt-2 fs-6 align-items-baseline d-none ">
-                <li><Link >Home </Link></li>
-                <li><Link >About Us </Link></li>
-                <li><Link >Services </Link></li>
-                <li><Link >Projects </Link></li>
-                <li><Link >Milestones </Link></li>
-                <li><Link >Contact Us </Link></li>
-                <li><Link >Career </Link></li>
+              <li><NavLink >Home </NavLink></li>
+                <li><NavLink >About Us </NavLink></li>
+                <li><NavLink >Services </NavLink></li>
+                <li><NavLink >Projects </NavLink></li>
+                <li><NavLink >Milestones </NavLink></li>
+                <li><NavLink >Contact Us </NavLink></li>
+                <li><NavLink >Career </NavLink></li>
                 
                
             </ul>
@@ -79,11 +45,7 @@ const Nav = () => {
 
 
       </header>
-                  <div className="d-block d-lg-none">
-        <button className="menu-btn d-block d-lg-none" onClick={() => setOpen(true)}>
-        ☰
-      </button>
-       </div>
+    
     </>
   );
 };

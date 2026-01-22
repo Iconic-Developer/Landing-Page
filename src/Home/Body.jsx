@@ -29,8 +29,16 @@ const Body = () => {
               manufacturing, and infrastructure sectors.
             </p>
             <div className="my-5">
-            <button className="btn btn-lg btn-warning  quote-btn">Get a Quote <i className="bi bi-arrow-right"></i></button>
-            <button type="button" className="btn btn-lg mx-3  service-btn ">Our Services</button>
+              <div className="row buttons">
+                <div className="col-12 col-sm-5">
+                              <button className="btn btn-lg btn-warning  quote-btn">Get a Quote <i className="bi bi-arrow-right"></i></button>
+
+                </div>
+                <div className="col-12 col-sm-7 mt-4">
+            <button type="button" className="btn btn-lg  service-btn ">Our Services</button>
+
+                </div>
+              </div>
             </div>
           </div>
 

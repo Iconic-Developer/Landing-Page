@@ -1,8 +1,15 @@
 import React from 'react';
 import styles from './NeedWorkforce.module.css';
-
+import { motion } from "framer-motion";
 const NeedWorkforce = () => {
   return  <>
+
+      <motion.div
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: false, amount: 0.3 }}
+    >
       <div className="container-fluid text-center">
         <div className={styles['excellence-body'] }  >
           <h1 className="fw-bold fs-3 text-daek">
@@ -17,6 +24,8 @@ const NeedWorkforce = () => {
             </div>
         </div>
       </div>
+    </motion.div>
+      
     </>
 }
 

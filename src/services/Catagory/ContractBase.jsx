@@ -7,15 +7,20 @@ import { IoMdTime } from "react-icons/io";
 import { LuFileText } from "react-icons/lu";
 import { FiCreditCard } from "react-icons/fi";
 import { FiBriefcase } from "react-icons/fi";
-
+import { motion } from "framer-motion";
 
 
 const ContractBase = () => {
   return (
     <>
       <div className="container-fluid">
-        <div className="row d-flex justify-content-center mt-4">
-          <div className="row">
+            <motion.div
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: false, amount: 0.3 }}
+    >
+         <div className="row">
             <div className="col">
               <ServiceHeading
                 title="NMR and Contract-Based Labour"
@@ -23,8 +28,16 @@ const ContractBase = () => {
               />
             </div>
           </div>
-
-          <div className="row d-flex justify-content-center">
+    </motion.div>
+        <div className="row d-flex justify-content-center mt-4">
+       
+        <motion.div
+    initial={{ opacity: 0, y: 100,scale:0 }}
+      whileInView={{ opacity: 1, y: 0,scale:1 }}
+      transition={{ duration: .5, ease: "linear" }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <div className="row d-flex justify-content-center">
             <div className="col-6 col-md-3 col-lg-2  mb-4">
               <Templates title="Daily Wage Workers" icon={<IoMdTime />} />
             </div>
@@ -41,6 +54,8 @@ const ContractBase = () => {
             </div>
            
           </div>
+    </motion.div>
+          
           <div className="row">
             <div className="col">
               <Endline />

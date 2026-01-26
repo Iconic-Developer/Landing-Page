@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useRef,useLayoutEffect } from "react";
 import logo from '../images/logo.jpg';
 import './Nav.css';
 import {NavLink} from 'react-router-dom';
 import BurgerMenu from "./BurgerMenu";
-
+import gsap  from "gsap";
 
 
 
@@ -11,8 +11,22 @@ import BurgerMenu from "./BurgerMenu";
 
 const Nav = () => {
 
-  
 
+  let navRef =useRef();
+   useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(navRef.current, {
+        y: -100,
+        duration: 1.5,
+        ease: "power3.out"
+      });
+    }, navRef);
+
+    return () => ctx.revert(); 
+  }, []);
+
+
+  
   return (
 
     
@@ -21,7 +35,7 @@ const Nav = () => {
 
 
 
-      <header className=" mw-100 ">
+      <header ref={navRef} className=" mw-100 ">
 
        
 

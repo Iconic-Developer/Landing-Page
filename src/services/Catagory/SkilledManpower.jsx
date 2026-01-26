@@ -12,7 +12,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { PiLightningBold } from "react-icons/pi";
 import { LuWrench } from "react-icons/lu";
 
-
+import { motion } from "framer-motion";
 
 
 
@@ -23,8 +23,14 @@ const ServiceTemplate = () => {
   return (
     <>
       <div className="container-fluid">
-        <div className="row d-flex justify-content-center mt-4">
-          <div className="row">
+
+            <motion.div
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: false, amount: 0.5 }}
+    >
+       <div className="row">
             <div className="col">
               <ServiceHeading
                 title="Skilled Manpower Supply"
@@ -32,8 +38,17 @@ const ServiceTemplate = () => {
               />
             </div>
           </div>
+    </motion.div>
+        <div className="row d-flex justify-content-center mt-4">
+         
 
-          <div className="row d-flex justify-content-center">
+   <motion.div
+      initial={{ opacity: 0, y: 100,scale:0 }}
+      whileInView={{ opacity: 1, y: 0,scale:1 }}
+      transition={{ duration: .5, ease: "linear" }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <div className="row d-flex justify-content-center">
             <div className="col-6 col-md-3 col-lg-2  mb-4">
               <Templates title="Electrician" icon={<PiLightningBold />} />
             </div>
@@ -69,6 +84,10 @@ const ServiceTemplate = () => {
 } />
             </div>
           </div>
+    </motion.div>
+
+
+          
           <div className="row">
             <div className="col">
               <Endline />

@@ -9,7 +9,7 @@ import { FiPackage } from "react-icons/fi";
 import { LuHardHat } from "react-icons/lu";
 import { LuWrench } from "react-icons/lu";
 import { LuHouse } from "react-icons/lu";
-
+import { motion } from "framer-motion";
 
 
 
@@ -17,8 +17,14 @@ import { LuHouse } from "react-icons/lu";
 const UnskilledManpower = () => {
   return <>
     <div className="container-fluid">
-      <div className="row d-flex justify-content-center mt-4">
-        <div className="row">
+
+          <motion.div
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: false, amount: 0.5 }}
+    >
+          <div className="row">
           <div className="col">
             <ServiceHeading
               title="Unskilled Manpower Supply"
@@ -26,8 +32,18 @@ const UnskilledManpower = () => {
             />
           </div>
         </div>
+    </motion.div>
 
-        <div className="row d-flex justify-content-center">
+
+      <div className="row d-flex justify-content-center mt-4">
+    
+          <motion.div
+      initial={{ opacity: 0, y: 100,scale:0 }}
+      whileInView={{ opacity: 1, y: 0,scale:1 }}
+      transition={{ duration: .5, ease: "linear" }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <div className="row d-flex justify-content-center">
 
 
         <div className="col-6 col-md-3 col-lg-2  mb-4">
@@ -55,6 +71,8 @@ const UnskilledManpower = () => {
 
 
       </div>
+    </motion.div>
+        
         <div className="row">
             <div className="col">
                 <Endline />

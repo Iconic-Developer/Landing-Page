@@ -4,26 +4,43 @@ import { FaRegStar } from "react-icons/fa";
 import { IoMdTime } from "react-icons/io";
 import { LuUsers } from "react-icons/lu";
 import { LuBuilding } from "react-icons/lu";
-
+import { motion } from "framer-motion";
 
 const WhyChooseContent = () => {
   return (
     <>
       <div className="container-fluid my-4">
-        <div className="row Scrolled">
-          <div className="col text-center my-3">
+
+        
+        <div className="row ">
+              <motion.div
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: false, amount: 0.3 }}
+    >
+         <div className="col text-center my-3">
             <h1 className="fw-bold fs-2">
               Why Chooce{" "}
               <span className="text-warning">LABOUR BRIDGES India</span>
             </h1>
             <p className="fs-5 mt-3">Our unique selling propositions that set us apart</p>
           </div>
+    </motion.div>
+       
         </div>
 
         <div className="row my-3 p-2 ">
 
-          <div className="col col-md-6 col-xl-3 mb-4 Scrolled">
-            <div className="card shadow-lg ">
+          <div className="col-12 col-md-6 col-xl-3 mb-4 ">
+
+              <motion.div
+        initial={{ opacity: 0, y: 100,scale:0 }}
+      whileInView={{ opacity: 1, y: 0,scale:1 }}
+      transition={{ duration: .7, ease: "linear" }}
+      viewport={{ once: true, amount: 0.1 }}
+    >
+      <div className="card shadow-lg ">
               <div className="card-body text-center">
 
                 <div className="icon-box">
@@ -41,11 +58,19 @@ const WhyChooseContent = () => {
                 </p>
               </div>
             </div>
+    </motion.div>
+            
           </div>
 
 
- <div className="col col-md-6 col-xl-3 mb-4 Scrolled">
-            <div className="card shadow-lg ">
+ <div className="col-12 col-md-6 col-xl-3 mb-4 ">
+    <motion.div
+ initial={{ opacity: 0, y: 100,scale:0 }}
+      whileInView={{ opacity: 1, y: 0,scale:1 }}
+      transition={{ duration: .7, ease: "linear" }}
+      viewport={{ once: true, amount: 0.1 }}
+    >
+      <div className="card shadow-lg ">
               <div className="card-body text-center">
 
                 <div className="icon-box">
@@ -64,11 +89,20 @@ const WhyChooseContent = () => {
                 </p>
               </div>
             </div>
+    </motion.div>
+            
           </div>
 
 
- <div className="col col-md-6 col-xl-3 mb-4 Scrolled">
-            <div className="card shadow-lg ">
+ <div className="col-12 col-md-6 col-xl-3 mb-4 ">
+
+    <motion.div
+  initial={{ opacity: 0, y: 100,scale:0 }}
+      whileInView={{ opacity: 1, y: 0,scale:1 }}
+      transition={{ duration: .7, ease: "linear" }}
+      viewport={{ once: true, amount: 0.1 }}
+    >
+         <div className="card shadow-lg ">
               <div className="card-body text-center">
 
                 <div className="icon-box">
@@ -87,10 +121,19 @@ const WhyChooseContent = () => {
                 </p>
               </div>
             </div>
+    </motion.div>
+         
           </div>
 
- <div className="col col-md-6 col-xl-3 mb-4 Scrolled">
-            <div className="card shadow-lg ">
+ <div className="col-12 col-md-6 col-xl-3 mb-4 ">
+
+    <motion.div 
+     initial={{ opacity: 0, y: 100,scale:0 }}
+      whileInView={{ opacity: 1, y: 0,scale:1 }}
+      transition={{ duration: .7, ease: "linear" }}
+      viewport={{ once: true, amount: 0.1 }}
+    >
+       <div className="card shadow-lg ">
               <div className="card-body text-center">
 
                 <div className="icon-box">
@@ -109,6 +152,8 @@ const WhyChooseContent = () => {
                 </p>
               </div>
             </div>
+    </motion.div>
+           
           </div>
 
          

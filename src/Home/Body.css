@@ -237,3 +237,26 @@ margin: auto;
 }
 
 }
+/* animation area */
+
+.heading-animation{
+animation-name: heading;    
+animation-duration: 2s;
+ 
+
+}
+
+
+@keyframes heading{
+  from{
+    opacity: 0;
+    transform: translateX(220px);
+    mix-blend-mode: lighten;
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+    mix-blend-mode: lighten;
+  }
+}
+

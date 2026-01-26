@@ -10,14 +10,20 @@ import { FiCreditCard } from "react-icons/fi";
 import { FiUserCheck } from "react-icons/fi";
 
 
-
+import { motion } from "framer-motion";
 
 
 const ProjectBase = () => {
   return  <>
     <div className="container-fluid">
-      <div className="row d-flex justify-content-center mt-4">
-        <div className="row">
+
+          <motion.div
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: false, amount: 0.3 }}
+    >
+      <div className="row">
           <div className="col">
             <ServiceHeading
               title="Project-Based Staffing"
@@ -25,9 +31,17 @@ const ProjectBase = () => {
             />
           </div>
         </div>
+    </motion.div>
+      <div className="row d-flex justify-content-center mt-4">
         
-        <div className="row d-flex justify-content-center">
-        <div className="col-6 col-md-3 col-lg-2 mx-3  mb-4">
+            <motion.div
+      initial={{ opacity: 0, y: 100,scale:0 }}
+      whileInView={{ opacity: 1, y: 0,scale:1 }}
+      transition={{ duration: .5, ease: "linear" }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+       <div className="row d-flex justify-content-center">
+        <div className="col-6 col-md-3 col-lg-2   mb-4">
           <Templates title="Short-term Projects" icon={<IoMdTime />} />
         </div>
         <div className="col-6 col-md-3 col-lg-2  mb-4">
@@ -48,6 +62,8 @@ const ProjectBase = () => {
 
 
       </div>
+    </motion.div>
+       
         <div className="row">
             <div className="col">
                 <Endline />

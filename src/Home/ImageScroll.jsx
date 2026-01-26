@@ -1,11 +1,34 @@
 import React from 'react';
-import "./Description.css";
+import styles from "./ImageScroll.module.css";
 
 
 const ImageScroll = () => {
   return <>
-  
- < div className="container my-4 Scrolled flex ">
+
+          <div className="container-fluid">
+              <div className="row">
+                <div className='col-12'>
+                <div className='d-flex '>
+                  <div  >
+                    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaI2zGNYT_b8vfTGuQJZ3uVG7MsOpIMwG9mg&s" alt="" />
+                  </div>
+                </div>
+                </div>
+
+              </div>
+
+
+          </div>
+ 
+  </>
+}
+
+export default ImageScroll
+
+
+
+
+{/* < div className="container my-4 Scrolled flex ">
         <div className="row shadow p-3 mb-2 bg-body-white rounded-4 logos">
           <div className="col scroll-img ">
             <img
@@ -101,8 +124,4 @@ const ImageScroll = () => {
        
 
       
-      </div>
-  </>
-}
-
-export default ImageScroll
+      </div> */}

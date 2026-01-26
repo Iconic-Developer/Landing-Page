@@ -1,5 +1,10 @@
 import React from "react";
 import "./WhyChoose.css";
+import { FaRegStar } from "react-icons/fa";
+import { IoMdTime } from "react-icons/io";
+import { LuUsers } from "react-icons/lu";
+import { LuBuilding } from "react-icons/lu";
+
 
 const WhyChooseContent = () => {
   return (
@@ -11,73 +16,102 @@ const WhyChooseContent = () => {
               Why Chooce{" "}
               <span className="text-warning">LABOUR BRIDGES India</span>
             </h1>
-            <p>Our unique selling propositions that set us apart</p>
+            <p className="fs-5 mt-3">Our unique selling propositions that set us apart</p>
           </div>
         </div>
 
         <div className="row my-3 p-2 ">
+
           <div className="col col-md-6 col-xl-3 mb-4 Scrolled">
             <div className="card shadow-lg ">
               <div className="card-body text-center">
-                <span className="icon mt-2">
-                  <i class="bi bi-check2-circle fs-4 "></i>
+
+                <div className="icon-box">
+                     <span className="icon mt-2 h2">
+                  {< FaRegStar />}
                 </span>
-                <h6 className="card-subtitle mt-4 text-dark  fw-bold">
+                </div>
+             
+
+                <h6 className="card-subtitle mt-4 text-dark h5 fw-bold">
                   Timely Diployment
                 </h6>
-                <p className="card-text text-secondary my-3 ">
+                <p className="card-text text-secondary  my-3 ">
                   Rapid workforce deployment with 95% on-time delivery rate
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="col-12 col-md-6 col-xl-3 mb-4 Scrolled">
+
+ <div className="col col-md-6 col-xl-3 mb-4 Scrolled">
             <div className="card shadow-lg ">
               <div className="card-body text-center">
-                <span className="icon mt-2">
-                  <i class="bi bi-check2-circle fs-4 "></i>
+
+                <div className="icon-box">
+                     <span className="icon mt-2 h2">
+                  {<IoMdTime />
+}
                 </span>
-                <h6 className="card-subtitle mt-4 text-dark  fw-bold">
-                  Timely Diployment
+                </div>
+             
+
+                <h6 className="card-subtitle mt-4 text-dark h5 fw-bold">
+               Quality Assurance
                 </h6>
-                <p className="card-text text-secondary my-3 ">
-                  Rapid workforce deployment with 95% on-time delivery rate
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-6 col-xl-3 mb-4 Scrolled">
-            <div className="card shadow-lg ">
-              <div className="card-body text-center">
-                <span className="icon mt-2">
-                  <i class="bi bi-check2-circle fs-4 "></i>
-                </span>
-                <h6 className="card-subtitle mt-4 text-dark  fw-bold">
-                  Timely Diployment
-                </h6>
-                <p className="card-text text-secondary my-3 ">
-                  Rapid workforce deployment with 95% on-time delivery rate
+                <p className="card-text text-secondary  my-3 ">
+                 Rigorous screening and training processes ensure top-quality workforce
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="col col-md-6 col-xl-3 Scrolled">
+
+ <div className="col col-md-6 col-xl-3 mb-4 Scrolled">
             <div className="card shadow-lg ">
               <div className="card-body text-center">
-                <span className="icon mt-2">
-                  <i class="bi bi-check2-circle fs-4 "></i>
+
+                <div className="icon-box">
+                     <span className="icon mt-2 h2">
+                  {<LuUsers />
+}
                 </span>
-                <h6 className="card-subtitle mt-4 text-dark  fw-bold">
-                  Timely Diployment
+                </div>
+             
+
+                <h6 className="card-subtitle mt-4 text-dark h5 fw-bold">
+               Skilled Workforce
                 </h6>
-                <p className="card-text text-secondary my-3 ">
-                  Rapid workforce deployment with 95% on-time delivery rate
+                <p className="card-text text-secondary  my-3 ">
+                 Access to a vast network of skilled and certified professionals
                 </p>
               </div>
             </div>
           </div>
+
+ <div className="col col-md-6 col-xl-3 mb-4 Scrolled">
+            <div className="card shadow-lg ">
+              <div className="card-body text-center">
+
+                <div className="icon-box">
+                     <span className="icon mt-2 h2">
+                  {<LuBuilding />
+}
+                </span>
+                </div>
+             
+
+                <h6 className="card-subtitle mt-4 text-dark h5 fw-bold">
+              Compliance Excellence
+                </h6>
+                <p className="card-text text-secondary  my-3 ">
+                 Full legal compliance and documentation management
+                </p>
+              </div>
+            </div>
+          </div>
+
+         
         </div>
       </div>
     </>

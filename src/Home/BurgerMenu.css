@@ -1,0 +1,87 @@
+/* Burger button */
+.burger-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 998;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Side menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 280px;
+  background: #fff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 999;
+  /* padding: 20px; */
+}
+
+.side-menu.open {
+  transform: translateX(0);
+}
+
+/* Close button */
+.close-btn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/* Menu links */
+.side-menu nav {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: #92989d;
+  line-height: 50px;
+   
+}
+
+
+.india{
+  position: relative;
+  bottom: 20px;
+  left: 10px;
+}
+
+.side-logo{
+  padding: 15px;
+  height: 80px;
+  border-bottom: .5px solid rgba(0, 0, 0, 0.247);
+  
+}
+.side-logo img{
+ position: relative;
+ top: 6px;
+  
+}

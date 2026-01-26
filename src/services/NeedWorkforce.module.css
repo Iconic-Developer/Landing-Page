@@ -1,0 +1,22 @@
+.excellence-body{
+background-color: orange;
+  width: 100%;
+  border-radius: 25px;
+  padding: 30px;
+}
+
+.excellence-body p{
+  font-size: 18px;
+}
+
+.span {
+  color: #b5b1af;
+  font-size: 12px;
+}
+/* 
+.button{
+
+    border-radius: 12px;
+ background: linear-gradient(rgb(0, 0, 0), rgb(18, 25, 41));
+color: red;
+} */

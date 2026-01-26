@@ -15,10 +15,10 @@ const PrtnerSection = ({children}) => {
               and industries.
             </p>
           </div>
-          {children}
+         {children}
         </div>
       </div>
-
+ 
       
     </>
   );

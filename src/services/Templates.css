@@ -1,0 +1,35 @@
+.template{
+    height: 160px;
+    border-radius: 20px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.icons{
+    height: 65px;
+    width: 65px;
+    background-color: #f3b702;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.template p{
+    line-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.service-template{
+box-shadow: -2px 6px 16px -7px rgba(0,0,0,0.38);
+-webkit-box-shadow: -2px 6px 16px -7px rgba(0,0,0,0.38);
+-moz-box-shadow: -2px 6px 16px -7px rgba(0,0,0,0.38);
+}
+.end-line{
+    height: 4px;
+    width: 100px;
+    background-color: rgb(253, 174, 27);
+}

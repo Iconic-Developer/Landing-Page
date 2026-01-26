@@ -4,12 +4,12 @@ import "./ReadyToStart.css";
 const ReadyToStart = () => {
   return (
     <>
-      <div className="container text-center">
-        <div className="excellence-body my-4">
+      <div className="container-fluid text-center">
+        <div className="excellence-body my-4 p-5">
           <h1 className="fw-bold fs-3 text-white">
             Ready to Start Your Next Project?
           </h1>
-          <p className="mt-3">
+          <p className="mt-3 fs-5 ">
             Join these industry leaders and experience the LABOURBridge
             difference. From skilled technicians to project management support,
             we deliver excellence.

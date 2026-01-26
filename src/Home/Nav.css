@@ -2,8 +2,11 @@ header{
     margin: 0;
     padding: 0;
     height: 50px;
+    width: 100%;
     background-color: white;
-    position: relative;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
 }
 .menu-list a{
   list-style-type: none;

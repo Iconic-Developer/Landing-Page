@@ -1,0 +1,27 @@
+.main-img{
+    
+     background-color: orange;
+    border-radius: 25px;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+.main-img img{
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+}
+
+.key{
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+@media(max-width:499px){
+    .key{
+font-size: 1em;
+    }
+}

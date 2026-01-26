@@ -1,0 +1,71 @@
+.brand-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 24px 0;
+  background-color: white;
+}
+
+/* fade edges */
+.brand-marquee::before,
+.brand-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.brand-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #fff, transparent);
+}
+
+.brand-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #fff, transparent);
+}
+
+.track {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 12px 0px;
+}
+
+.logos {
+    margin: 20px 0;
+  display: inline-flex;
+  gap: 64px;
+  animation: scroll 50s linear infinite;
+}
+
+.track.reverse .logos {
+  animation-direction: reverse;
+}
+
+.logos img {
+  height: 60px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.logos img:hover {
+  opacity: 1;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width:499px){
+  .logos img{
+    height: 50px;
+  }
+}

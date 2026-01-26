@@ -2,8 +2,11 @@ import React from "react";
 import "./Footer.css";
 import { CiTwitter } from "react-icons/ci";
 import { FiFacebook } from "react-icons/fi";
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
+  const scrollToTop = () =>
+  window.scrollTo({ top: 0, behavior: "smooth" });
   return (
     <>
       <footer>
@@ -16,19 +19,21 @@ const Footer = () => {
                 skilled talent with industry leaders since 2023.
               </p>
               <div className="contact">
-                <i class="bi bi-geo-alt text-warning me-2"></i> Chennai, Tamil
-                Nadu
+                
+                <p className="h6"> <i class="bi bi-geo-alt text-warning me-2 h5"></i>  Chennai, Tamil
+                Nadu</p>
               </div>
               <div className="contact"> 
-                <i class="bi bi-telephone text-warning me-2 mt-2"></i>+91 40 4567
-                8902
+                <p><i class="bi bi-telephone text-warning me-2 mt-2"></i> +91 40 4567
+                8902</p>
+                
               </div>
               <div className="contact">
-                <i class="bi bi-envelope text-warning me-2"></i>
-                info@labourbridges.com
+                
+                <p><i class="bi bi-envelope text-warning me-2"></i> info@labourbridges.com </p>
               </div>
 
-              <div id="social" className="mt-3">
+              <div id="social" className="mt-4">
                 <span className="social">
                   <i class="bi bi-instagram"></i>
                 </span>
@@ -38,35 +43,40 @@ const Footer = () => {
             </div>
 
             <div className="col-12 col-sm-6 col-lg-3">
-              <h1 className="fs-6 ms-3">Quick Links</h1>
-              <ul className="mt-3" >
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Clients</li>
-                <li>Milestons</li>
-                <li>Contact</li>
+              <p className="h5 ms-3">Quick Links</p>
+              <ul className="mt-3 " >
+                <li><Link>Home</Link></li>
+                <li><Link>About Us</Link></li>
+                <li><Link>Services</Link></li>
+                <li><Link>Projects</Link></li>
+                <li><Link>Milestones</Link></li>
+                <li><Link>Contact Us</Link></li>
+            
               </ul>
             </div>
             <div className="col-12 col-sm-6 col-lg-3">
-              <h1 className="fs-6 ms-3  ">Our Services</h1>
-              <ul className="mt-3" >
-                <li>Skilled Manpower Supply</li>
-                <li>Unskilled Manpower Supply</li>
-                <li>Project-Based Staffing</li>
-                <li>Turnkey Workforce Solutions</li>
-                <li>NMR & Contract Labour</li>
+              <p className="h5 ms-3">Our Services</p>
+             <ul className="mt-3 " >
+                <li><Link>Skilled Manpower Supply</Link></li>
+                <li><Link>Unskilled Manpower Supply</Link></li>
+                <li><Link>Project-Based Staffing</Link></li>
+                <li><Link>Turnkey Workforce Solutions</Link></li>
+                <li><Link>NMR & Contract Labour</Link></li>
+               
+            
               </ul>
             </div>
             <div className="col-12 col-sm-6 col-lg-3">
-              <h1 className="fs-6 ms-3">Industries We Serve</h1>
-              <ul  className="mt-3">
-                <li>Construction</li>
-                <li>Manufacturing</li>
-                <li>Infrastructure</li>
-                <li>Real Estate</li>
-                <li>Logistics</li>
-                <li>EPC Sectors</li>
+              <p className="h5 ms-3">Industries We Serve</p>
+          <ul className="mt-3 " >
+                <li><Link>Construction</Link></li>
+                <li><Link>Manufacturing</Link></li>
+                <li><Link>Infrastructure</Link></li>
+                <li><Link>Real Estate</Link></li>
+                <li><Link>Logistics</Link></li>
+                <li><Link>EPC Sectors</Link></li>
+               
+            
               </ul>
             </div>
           </div>
@@ -78,10 +88,10 @@ const Footer = () => {
                 | Terms of Service
               </p>
             </div>
-            <div className="col-12 col-md-1 go-top-middle">
+            <div className="col-12 col-md-1 go-top-middle" onClick={scrollToTop}>
                <div id="social" >
                 
-                <span className="social  go-top">
+               <span className="social  go-top">
                   <i class="bi bi-arrow-up-short fs-3 fw-bold text-dark "></i>
                 </span>
               </div>

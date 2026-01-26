@@ -1,7 +1,14 @@
 import React from "react";
 import logo from '../images/logo.jpg';
 import './Nav.css';
-import {NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom';
+import BurgerMenu from "./BurgerMenu";
+
+
+
+
+
+
 const Nav = () => {
 
   
@@ -14,7 +21,7 @@ const Nav = () => {
 
 
 
-      <header className=" mw-100 animated">
+      <header className=" mw-100 ">
 
        
 
@@ -37,11 +44,14 @@ const Nav = () => {
                 
                
             </ul>
-
-      
+              
+            <div className="burger d-block d-lg-none me-2">
+          <BurgerMenu />
+        </div>
         
         </nav>
-    
+
+      
 
 
       </header>

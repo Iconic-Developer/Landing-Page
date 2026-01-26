@@ -3,24 +3,27 @@ import Nav from './Home/Nav'
 import Body from './Home/Body'
 import PartnerSection from './Home/PartnerSection'
 import Footer from './Home/Footer'
-import KeyProjects from './Projects/KeyProjects'
-import Card from './Projects/Card'
 import WhyChooseContent from './Projects/WhyChooseContent'
 import ReadyToStart from './Home/ReadyTo Start'
-import ImageScroll from './Home/ImageScroll'
+
+import OurServiceHeading from './services/OurServiceHeading'
+import NeedWorkforce from './services/NeedWorkforce'
+import Brand from './services/Brand'
+import ServiceTemplate from './services/ServiceTemplate'
 
 
 const App = () => {
   return <>
     <Nav />
     <Body />
+    <OurServiceHeading />
+    <ServiceTemplate />
+    <NeedWorkforce />
     <PartnerSection>
-      <ImageScroll />
+      <Brand />
     </PartnerSection>
     <WhyChooseContent />
-    <KeyProjects />
-    <Card />
-   
+    
     <ReadyToStart />
     
     <Footer />

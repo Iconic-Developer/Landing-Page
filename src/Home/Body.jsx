@@ -1,97 +1,112 @@
 import React from "react";
 import "./Body.css";
-import './Animation.css';
-import logo from "../images/construction-workers.jpg";
+import "./Animation.css";
+import logo from "../images/labour.jpg";
 import { PiMedalFill } from "react-icons/pi";
-import { useRef, useState,useEffect } from "react";
-
-
+import { useRef, useState, useEffect } from "react";
 
 const Body = () => {
   return (
     <>
-    
-    <main>
-      <div className="container-fluid  body">
-
-        <div className="row my-4">
-
-          <div className="col-12 col-lg-6 mt-5 animated ">
-            <h1 className=" fw-bold">
-              Building India's{" "}
-              <span className="text-warning">Infrastructure</span>, 
-            </h1>
-            <h1 className="mb-3 fw-bold">One
-              Workforce at a Time</h1>
-            <p className="para my-4 fs-5">
-              India's most trusted manpower outsourcing company, connecting
-              skilled professionals with industry leaders across construction,
-              manufacturing, and infrastructure sectors.
-            </p>
-            <div className="my-5">
-              <div className="row buttons">
-                <div className="col-12 col-sm-5">
-                              <button className="btn btn-lg btn-warning  quote-btn">Get a Quote <i className="bi bi-arrow-right"></i></button>
-
+      <main>
+        <div className="container-fluid my-2 body">
+          <div className="row flex-wrap-reverse my-5 p-3">
+            <div className="col-12 col-md-8 mt-5 animated ">
+              <h1 className=" fw-bold mt-4">
+                Building India's{" "}
+                <span className="text-warning">Infrastructure</span>,
+              </h1>
+              <h1 className="mb-3 fw-bold">One Workforce at a Time</h1>
+              <p className="para my-4 fs-5">
+                India's most trusted manpower outsourcing company, connecting
+                skilled professionals with industry leaders across construction,
+                manufacturing, and infrastructure sectors.
+              </p>
+              <div className="my-5">
+                <div className="row buttons">
+                  <div className="col-12 col-sm-5 gap-3 d-flex flex-wrap">
+                    <button className="btn btn-lg btn-warning  quote-btn">
+                      Get a Quote <i className="bi bi-arrow-right"></i>
+                    </button>
+                    <button type="button" className="btn btn-lg  service-btn ">
+                      Our Services
+                    </button>
+                  </div>
                 </div>
-                <div className="col-12 col-sm-7 mt-4">
-            <button type="button" className="btn btn-lg  service-btn ">Our Services</button>
+              </div>
+              <div>
+                <div className="row gap-4  social-media">
+                  <div className="col-2">
+                    <div className="media-icon">
+                      <i class="bi bi-facebook"></i>{" "}
+                    </div>
+                  </div>
+                  <div className="col-2">
+                    <div className="media-icon">
+                      <i class="bi bi-whatsapp "></i>
+                    </div>
+                  </div>
+                  <div className="col-2">
+                    <div className="media-icon">
+         <i class="bi bi-instagram"></i>{" "}
+                    </div>
+                   
+                  </div>
+                  <div className="col-2">
+                    <div className="media-icon">
+                    <i class="bi bi-twitter"></i>
 
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div className="col-12 col-md-4 d-flex justify-content-center align-items-center body-img  ">
+              <img src={logo} alt="" height={500} />
+            </div>
           </div>
 
-          <div className="col-12 col-xl-6 mt-5 position-relative  animated">
-            <div className="img">
-              <img src={logo} alt=""   />
-                
+          <div className="row">
+            <div className="col">
+              <div className="ruler"></div>
             </div>
-
-            <div className="div">
-               <div className="safety">
-                <div className="">Safety First</div>
-                <div>100% Compliance</div>
-               </div>
-
-               <div className="certified">
-                <div className="">Certified</div>
-                <div>Professional Workers</div>
-               </div>
-           
-            </div>
-             
           </div>
-        </div>
+          {/* counter */}
 
-    <div className="row animated">
-        <div className="col overview position-relative text-center my-4 ">
-            <h1>Overview</h1>
-        </div>
-    </div>
-
-    <div className="container my-4 ">
-        <div className="row">
-            <div className="col text-center">
-                <span><i className="bi bi-people-fill text-warning fs-1"></i></span>
-                <div className="people-count fw-bold fs-3"><Counter target={35000}  />+</div>
+          <div className="container my-4 ">
+            <div className="row">
+              <div className="col text-center">
+                <span>
+                  <i className="bi bi-people-fill text-warning fs-1"></i>
+                </span>
+                <div className="people-count fw-bold fs-3">
+                  <Counter target={35000} />+
+                </div>
                 <div className="text-secondary fs-6">Active Workers</div>
-            </div>
-            <div className="col text-center">
-                <span><i className="bi bi-buildings-fill text-warning fs-1"></i></span>
-                <div className="people-count fw-bold fs-3"><Counter target={500}  />+</div>
+              </div>
+              <div className="col text-center">
+                <span>
+                  <i className="bi bi-buildings-fill text-warning fs-1"></i>
+                </span>
+                <div className="people-count fw-bold fs-3">
+                  <Counter target={500} />+
+                </div>
                 <div className="text-secondary fs-6">Projects Completed</div>
-            </div>
-            <div className="col text-center">
-                <span className="fs-1 text-warning">   <PiMedalFill /></span>
-                <div className="people-count fw-bold fs-3"><Counter target={50}  />+</div>
+              </div>
+              <div className="col text-center">
+                <span className="fs-1 text-warning">
+                  {" "}
+                  <PiMedalFill />
+                </span>
+                <div className="people-count fw-bold fs-3">
+                  <Counter target={50} />+
+                </div>
                 <div className="text-secondary fs-6">Trusted Clients</div>
-             
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-
-      </div>
       </main>
     </>
   );
@@ -131,17 +146,12 @@ function Counter({ target, duration = 2000 }) {
           requestAnimationFrame(animate);
         }
       },
-      { threshold: 0.6 }
+      { threshold: 0.6 },
     );
 
     observer.observe(node);
     return () => observer.disconnect();
   }, [target, duration]);
 
-  return (
-    <span ref={ref}>
-      {value.toLocaleString()}
-    </span>
-  );
+  return <span ref={ref}>{value.toLocaleString()}</span>;
 }
-

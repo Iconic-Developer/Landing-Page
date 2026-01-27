@@ -29,7 +29,15 @@ const KeyPoints = () => {
 
       
         <div className="col-12 col-sm-6 d-flex flex-column align-items-center mb-3 ">
-          <h3 className='text-center'>Seamlessly Providing</h3>
+             <motion.div
+     initial={{ opacity: 0, x: 200, }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut",delay:0.3 }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+        <h3 className='text-center'>Seamlessly Providing</h3>
+       </motion.div>
+        
           <ul className='mt-2 key'>
             <li>          <motion.div
       initial={{ opacity: 0, x: 200, }}

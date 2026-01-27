@@ -8,37 +8,85 @@ const KeyPoints = () => {
   
 <div className="container mt-4 p-4">
 
+  
+
     
-
-
-         <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut", }}
-      viewport={{ once: true, amount: 0.3 }}
-    >
       <div className="row">
       <div className="col-12 col-sm-6 mb-3   main-img">
-            <img src={logo}  alt="" />
+             <motion.div
+      initial={{ opacity: 0, x: -200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut",delay:.6 }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <img src={logo}  alt="" />
+       </motion.div>
+            
         </div>
     
         
           
 
       
-        <div className="col-12 col-sm-6 d-flex flex-column align-items-center mb-3 img-animation">
+        <div className="col-12 col-sm-6 d-flex flex-column align-items-center mb-3 ">
           <h3 className='text-center'>Seamlessly Providing</h3>
           <ul className='mt-2 key'>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Skilled & Reliable Workforce</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2" /> Quick Labour Deployment</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2" /> Verified & Safety-Trained Staff</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2" /> Flexible Hiring Solutions</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2" /> Legal & Regulatory Compliance</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2" /> Multi-Sector Project Support</li>
+            <li>          <motion.div
+      initial={{ opacity: 0, x: 200, }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut",delay:0.6 }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <i class="bi bi-check-circle-fill text-success me-2"></i> Skilled & Reliable Workforce
+       </motion.div></li>
+
+
+            <li>           <motion.div
+      initial={{ opacity: 0, x: 200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut", delay:0.7}}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <i class="bi bi-check-circle-fill text-success me-2" /> Quick Labour Deployment
+       </motion.div></li>
+            <li>
+              <motion.div
+      initial={{ opacity: 0, x: 200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut",delay:0.7 }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <i class="bi bi-check-circle-fill text-success me-2" /> Verified & Safety-Trained Staff
+       </motion.div></li>
+            <li>              <motion.div
+      initial={{ opacity: 0, x: 200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut",delay:0.8 }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <i class="bi bi-check-circle-fill text-success me-2" /> Flexible Hiring Solutions
+       </motion.div>
+</li>
+            <li>        <motion.div
+      initial={{ opacity: 0, x: 200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut",delay:0.9 }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <i class="bi bi-check-circle-fill text-success me-2" /> Legal & Regulatory Compliance
+       </motion.div></li>
+            <li><motion.div
+      initial={{ opacity: 0, x: 200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut",delay:1 }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <i class="bi bi-check-circle-fill text-success me-2" /> Multi-Sector Project Support
+       </motion.div></li>
           </ul>
         </div>
         </div>
-        </motion.div>
+       
     
 </div>
   

@@ -1,6 +1,5 @@
 .main-img{
     
-     background-color: orange;
     border-radius: 25px;
     padding: 5px;
     box-sizing: border-box;
@@ -11,7 +10,8 @@
     object-fit: cover;
     width: 100%;
     border-radius: 25px;
-    border: none;
+    border: 3px solid orange;
+
 }
 
 .key{
